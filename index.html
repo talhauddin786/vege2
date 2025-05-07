@@ -55,6 +55,18 @@
                     <input class="px-2 search" type="search " placeholder="Search " aria-label="Search ">
                     <button class="btn0" type="submit ">Search</button>
                 </form>
+                 <script>
+                    document.getElementById('searchForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); // prevent form from submitting normally
+                        const query = document.getElementById('searchInput').value.trim();
+                        if (query) {
+                            console.log("Searching for:", query);
+                            // You can replace this line with your actual search logic (e.g., fetch API)
+                        } else {
+                            alert("Please enter a search term.");
+                        }
+                    });
+                </script>
                
             </div>
         </div>
