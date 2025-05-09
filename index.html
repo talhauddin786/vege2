@@ -29,51 +29,47 @@
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Organic vegetables</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Organic vegetables</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav m-auto my-2 my-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="organic.html">ORGANIC</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="more.html">MORE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-            <!-- Corrected form with IDs -->
-            <form id="searchForm" class="d-flex" role="search">
-                <input id="searchInput" class="px-2 search" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn0" type="submit">Search</button>
-            </form>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav m-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="organic.html">ORGANIC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="more.html">MORE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <form class="d-flex " role="search ">
+                    <input class="px-2 search" type="search " placeholder="Search " aria-label="Search ">
+                    <button class="btn0" type="submit ">Search</button>
+                </form>
+                <script>
+                    document.getElementById('searchForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); // prevent form from submitting normally
+                        const query = document.getElementById('searchInput').value.trim();
+                        if (query) {
+                            console.log("Searching for:", query);
+                            // You can replace this line with your actual search logic (e.g., fetch API)
+                        } else {
+                            alert("Please enter a search term.");
+                        }
+                    });
+                </script>
+            </div>
         </div>
-    </div>
-</nav>
-
-<!-- Script placed outside to ensure elements are loaded -->
-<script>
-    document.getElementById('searchForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const query = document.getElementById('searchInput').value.trim();
-        if (query) {
-            console.log("Searching for:", query);
-            // Add search logic here
-        } else {
-            alert("Please enter a search term.");
-        }
-    });
-</script>
-
+    </nav>
 
     <!-- Main Section -->
     <section class="main ">
@@ -140,7 +136,7 @@
                 </div>
                 <div class="col-md-6 ">
                     <div class="card ">
-                        <img src="./img4.jpeg" height="292" class="card-img-top " alt="Assorted Summer Fruits ">
+                        <img src="./img4.jpeg" height="379" class="card-img-top " alt="Assorted Summer Fruits ">
                         <div class="card-body ">
                             <h6>RIDEGE GOURD</h6>
                             <p class="card-text ">Ridge Gourd Benefits: Ridge Gourd benefits and easy ways to ...Ridge gourd, also known as turai or patola, offers several health benefits, including improving vision, helping with anemia, aiding weight loss, and potentially
@@ -172,7 +168,7 @@
                 </div>
                 <div class="col-md-6 ">
                     <div class="card ">
-                        <img src="./img6.jpeg" class="card-img-top " alt="Assorted Summer Fruits ">
+                        <img src="./img6.jpeg" height="330" class="card-img-top " alt="Assorted Summer Fruits ">
                         <div class="card-body ">
                             <h6>LADYFINGER</h6>
                             <p class="card-text ">Rich in nutrients. Okra boasts an impressive nutrient profile. ... Contains beneficial antioxidants. Okra packs many antioxidants that benefit your health. ... May lower heart disease risk. ... May have anticancer properties.
